@@ -1,0 +1,106 @@
+<p>If there will be no data then the row will not be update</p>
+
+<table>
+    
+    <thead>
+        <th >Sr.No</th>
+       
+        <th >fraction</th>
+        <th>hsncode</th>
+        
+        <th >icode</th>
+        <th>iname</th>
+        
+        <th >item_subtype_code</th>
+        <th>item_type_code</th>
+        
+        <th >itype</th>
+        <th>kitchen_code</th>
+
+        <th >location</th>
+        <th>max_level</th>
+        
+        <th >opening_qty</th>
+        <th>purchase_rate</th>
+        
+        <th >recipe_qty</th>
+        <th>reorder_level</th>
+        
+        <th >reorder_qty</th>
+        <th>sih_rate</th>
+
+        <th >itype</th>
+        <th>kitchen_code</th>
+
+        <th >sub_unit</th>
+        <th>supplier_code1</th>
+        
+        <th >supplier_code2</th>
+        <th>time_period</th>
+        
+        <th >unit</th>
+        
+        
+    </thead>
+    <tbody>
+        
+        <tr *ngFor="let showDatavalue of showDataArr; let i = index">
+          
+            <td *ngIf="showDatavalue.fraction != null">{{i+1}}</td>
+            <td *ngIf="showDatavalue.fraction != null">{{showDatavalue.fraction}}</td>
+            <td *ngIf="showDatavalue.hsncode != null">{{showDatavalue.hsncode}}</td>
+
+
+            <td *ngIf="showDatavalue.icode != null">{{showDatavalue.icode}}</td>
+            <td *ngIf="showDatavalue.iname != null">{{showDatavalue.iname}}</td>
+
+
+
+            <td *ngIf="showDatavalue.item_subtype_code != null">{{showDatavalue.item_subtype_code}}</td>
+            <td *ngIf="showDatavalue.item_type_code != null">{{showDatavalue.item_type_code}}</td>
+
+
+            <td *ngIf="showDatavalue.itype != null">{{showDatavalue.itype}}</td>
+            <td *ngIf="showDatavalue.kitchen_code != null">{{showDatavalue.kitchen_code}}</td>
+
+
+
+            <td *ngIf="showDatavalue.location != null">{{showDatavalue.location}}</td>
+            <td *ngIf="showDatavalue.max_level != null">{{showDatavalue.max_level}}</td>
+
+            <td *ngIf="showDatavalue.opening_qty != null">{{showDatavalue.opening_qty}}</td>
+            <td *ngIf="showDatavalue.purchase_rate != null">{{showDatavalue.purchase_rate}}</td>
+
+
+
+            <td *ngIf="showDatavalue.recipe_qty != null">{{showDatavalue.recipe_qty}}</td>
+            <td *ngIf="showDatavalue.reorder_level != null">{{showDatavalue.reorder_level}}</td>
+
+            
+
+
+
+
+            <td *ngIf="showDatavalue.reorder_qty != null">{{showDatavalue.reorder_qty}}</td>
+            <td *ngIf="showDatavalue.sih_rate != null">{{showDatavalue.sih_rate}}</td>
+
+
+
+            <td *ngIf="showDatavalue.itype != null">{{showDatavalue.itype}}</td>
+            <td *ngIf="showDatavalue.kitchen_code != null">{{showDatavalue.kitchen_code}}</td>
+
+            <td *ngIf="showDatavalue.sub_unit != null">{{showDatavalue.sub_unit}}</td>
+            <td *ngIf="showDatavalue.supplier_code1 != null">{{showDatavalue.supplier_code1}}</td>
+
+
+
+            <td *ngIf="showDatavalue.supplier_code2 != null">{{showDatavalue.supplier_code2}}</td>
+            <td *ngIf="showDatavalue.time_period != null">{{showDatavalue.time_period}}</td>
+            <td *ngIf="showDatavalue.unit != null">{{showDatavalue.unit}}</td>
+
+            
+
+
+        </tr>
+    </tbody>
+</table>
